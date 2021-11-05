@@ -17,7 +17,7 @@ OUTPUT_IP=$(curl http://169.254.169.254/latest/meta-data/local-ipv4)
 
 You can change these variables as you need, for example, if you want to get hostname from the local machine, just get from hostname command !
 
-After that, we have the variable ACTION, which is an argument as you can see $1 (it references the first argument in shell script), here you must choose if you gonna be CREATE or DELETE a record.
+After that, we have the variable ACTION, which is an argument as you can see $1 (it references the first argument in shell script), here you must choose if you gonna be CREATE, UPSERT (update) or DELETE a record.
 
 Finally we have the aws cli command followed by the json that will interact with the Route 53 :
 
