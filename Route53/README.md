@@ -1,6 +1,6 @@
-# Create or delete a record on Route53
+# Create, update or delete a record on Route53
 
-This is a simple script which will create or delete a record on Route 53 using Shell Script and AWS CLI.
+This is a simple script which will create, update or delete a record on Route 53 using Shell Script and AWS CLI.
 
 # Before exec
 
@@ -56,3 +56,10 @@ DELETE:
 
 sh add_record_route53.sh DELETE
 
+UPDATE:
+
+sh add_record_route53.sh UPSERT
+
+### References
+
+AWS DOCS :  [AWS ChangeResourceRecordSets](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeResourceRecordSets.html)
