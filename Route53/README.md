@@ -1,4 +1,4 @@
-# Add or delete a record on Route53
+# Create or delete a record on Route53
 
 This is a simple script which will create or delete a record on Route 53 using Shell Script and AWS CLI.
 
