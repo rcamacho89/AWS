@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HOSTNAME=$(hostname)
+HOSTNAME=$(curl http://169.254.169.254/latest/meta-data/local-hostname)
 OUTPUT_IP=$(curl http://169.254.169.254/latest/meta-data/local-ipv4)
 ACTION=$1
 
