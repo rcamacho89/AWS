@@ -4,7 +4,7 @@ HOSTNAME=$(curl http://169.254.169.254/latest/meta-data/local-hostname)
 OUTPUT_IP=$(curl http://169.254.169.254/latest/meta-data/local-ipv4)
 ACTION=$1
 
-# Creates route 53 records based on env name
+# CREATE OR DELETE RECORD ON ROUTE 53 
 
 aws route53 change-resource-record-sets --hosted-zone-id YOUR_HOSTED_ZONE_ID --change-batch '
 {
