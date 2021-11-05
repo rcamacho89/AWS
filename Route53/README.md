@@ -4,7 +4,21 @@ This is a simple script which will create, update or delete a record on Route 53
 
 # Before exec
 
-Let's assume that we have a role with the correct policy attached in our EC2 instance which allows us do some actions on Route 53 ok ?
+Let's assume that we have a role with the correct policy attached in your EC2 instance, if you don't have it, below you can see a policy that you can take as an example:
+
+```console
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": "route53:ChangeResourceRecordSets",
+            "Resource": "arn:aws:route53:::hostedzone/HOST_ZONE_ID"
+        }
+    ]
+}
+```
 
 # The Script
 
