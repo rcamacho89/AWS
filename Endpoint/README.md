@@ -1,4 +1,4 @@
-# Associate endpoint to an existing VPC
+# Associate an endpoint to an existing VPC in the Route 53
 
 This is a shell script which will associate your VPC to an existing endpoint in the Route 53.
 
