@@ -2,7 +2,7 @@
 
 This is a shell script which will associate your VPC to an existing endpoint in the Route 53.
 
-The scenario: You have multiple accounts, with the necessity to access AWS endpoints services, but you can reduce your cost by sharing these endpoints through a shared account.
+The scenario: You have multiple accounts, with the necessity to access AWS endpoints services, you can reduce your cost by sharing these endpoints through a shared account.
 
 Shared account : Endpoint -> Target account.
 
